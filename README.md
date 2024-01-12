@@ -7,6 +7,23 @@
 *施威任*,
 *施哨亮*,
 
+### *Basic Setup*
+
+We will be using Python 3.10 on Google Colab as our environment. Any python environment should be acceptable as long as 
+
+*pandas, numpy, requests, os, math, matplotlib.pyplot, seaborn, collections, tensorflow, tensorflow.keras, keras.callbacks, tqdm.notebook, tensorflow.keras.layers, tensorflow.keras.optimizers, tensorflow.keras.regularizers, json, random, time.*
+
+are available.
+
+To select which ticker to use, simply change the line below.
+```
+initial_balance = 10000
+total_days = 1000  #600
+
+STOCK = ['AAPL'] #Change to 'SPY', 'AAPL', 'JPM', or 'XOM.
+```
+Then you're all set.
+
 ## Introduction
 In the dynamic and complex world of stock markets, accurate prediction and good trading strategies are needed to gain a profitable trading trend.
 
