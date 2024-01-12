@@ -37,10 +37,38 @@ Finally, the rewards will be detetermined by the profit received from each actio
 
 
 ### Model Training
-- Trained on 800 days and test on 200 days
-- Starting portfolio value of $10,000
-- Model Setup: 2 fully connected hidden layers with RELU activation
-- Action: {buy, hold, sell}
-- DQN Agent trained to pick action that maximises profit
+In this part, the performance of the model will be assessed for each of the four different securities.  A new model was trained for each of them. Thus, there are four different models to be presented. They were all trained over 800 timesteps and then evaluated for the following 200 timesteps, each corresponding to a trading day. Each portfolio’s starting value was $10.000.
+
+### Results
+**SPY Results**
+
+![SPY Closing Price Over Time and Actions Taken](/results/SPY1.png)
+![SPY Profit Percentage](/results/SPY2.png)
 
 
+**AAPL Results**
+
+![AAPL Closing Price Over Time and Actions Taken](/results/AAPL1.png)
+![AAPL Profit Percentage](/results/AAPL2.png)
+
+**JPM Results**
+
+![JPM Closing Price Over Time and Actions Taken](/results/JPM1.png)
+![JPM Profit Percentage](/results/JPM2.png)
+
+**XOM Results**
+
+![XOM Closing Price Over Time and Actions Taken](/results/XOM1.png)
+![XOM Profit Percentage](/results/XOM2.png)
+
+## Conclusion
+The project demonstrates the potential of DRL in enhancing stock market predictions. While promising, the model's performance underscores the complexity of financial markets and the need for continuous improvement and adaptation of trading algorithms.
+
+### References
+J. Wu, C. Wang, L.-D. Xiong, and H. Sun, “Quantitative Trading on Stock Market Based on Deep Reinforcement Learning,” 2019 International Joint Conference on Neural Networks (IJCNN), 2019, doi: https://doi.org/10.1109/IJCNN.2019.8851831.
+
+Y. Li, P. Ni, and V. Chang, “Application of deep reinforcement learning in stock trading strategies and stock forecasting,” Computing, vol. 102, no. 6, pp. 1305–1322, Dec. 2019, doi: https://doi.org/10.1007/s00607-019-00773-w.
+
+“API Documentation | Alpha Vantage,” Alphavantage.co, 2017. https://www.alphavantage.co/documentation/
+
+J. Fang, Y. Qin, and B. Jacobsen, “Technical market indicators: An overview,” Journal of Behavioral and Experimental Finance, vol. 4, pp. 25–56, Dec. 2014, doi: https://doi.org/10.1016/j.jbef.2014.09.001.
